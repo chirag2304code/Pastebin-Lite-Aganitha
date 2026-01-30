@@ -10,7 +10,7 @@ const ViewPaste = () => {
   useEffect(() => {
     const fetchPaste = async () => {
       try {
-        const response = await fetch(`http://https://pastebin-lite-backend-ecvs.onrender.com/api/pastes/${id}`);
+        const response = await fetch(`https://pastebin-lite-backend-ecvs.onrender.com/api/pastes/${id}`);
         const data = await response.json();
 
         if (!response.ok) {

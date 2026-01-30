@@ -13,7 +13,7 @@ const CreatePaste = () => {
     setShareableUrl('');
 
     try {
-      const response = await fetch('http://https://pastebin-lite-backend-ecvs.onrender.com/api/pastes', {
+      const response = await fetch("https://pastebin-lite-backend-ecvs.onrender.com/api/pastes", {
 
         method: 'POST',
         headers: {
