@@ -25,9 +25,11 @@ exports.createPaste = async (req, res) => {
     });
 
     // IMPORTANT: frontend expects /view/:id
+    const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
     res.status(201).json({
       id: paste._id,
-      url: `http://localhost:5173/view/${paste._id}`
+      // url: `http://localhost:5173/view/${paste._id}`
+      url: `${frontendUrl}/view/${paste._id}`
     });
 
   } catch (error) {
